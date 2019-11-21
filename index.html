@@ -11,9 +11,9 @@
     <nav>
       <img src="assets/elephant.svg" alt="Elephant" class="home-icon">
       <ul>
-        <li><a href="#assets"><img src="assets/dashboard.svg" alt="Elephant" class="nav-icon"></a></li>
-        <li><a href="#transactions"><img src="assets/transactions.svg" alt="Elephant" class="nav-icon"></a></li>
-        <li><a href="#profile"><img src="assets/profile.svg" alt="Elephant" class="nav-icon"></a></li>
+        <li><a href="#assets" id='assets'><img src="assets/dashboard.svg" alt="Elephant" class="nav-icon"></a></li>
+        <li><a href="#transactions" id='transactions'><img src="assets/transactions.svg" alt="Elephant" class="nav-icon"></a></li>
+        <li><a href="#profile" id='profile'><img src="assets/profile.svg" alt="Elephant" class="nav-icon"></a></li>
       </ul>
     </nav>
     <main>
@@ -22,7 +22,9 @@
       </div>
       <section class="section-left">
         <div id="welcomeBanner">
+          <button onclick='myFunction()' class='welcome-banner-button'>x</button>
           <h3>Welcome, Oscar!</h3>
+
         </div>
         <section class="accountOverview" id="assets">
           <div class="card col-33 left">
@@ -49,24 +51,24 @@
           <div class="card col-100">
             <img src="assets/savings.svg" alt="savings">
             <h4>Wells Fargo</h4>
-            <h4>Savings</h4>
+            <h5>Savings</h5>
           </div>
           <div class="card col-100">
             <img src="assets/credit-card.svg" alt="credit card">
             <h4>Amazon Credit</h4>
-            <h4>Credit Card</h4>
+            <h5>Credit Card</h5>
           </div>
           <div class="card col-100">
             <img src="assets/credit-card.svg" alt="credit card">
             <h4>Southwest Credit</h4>
-            <h4>Credit Card</h4>
+            <h5>Credit Card</h5>
           </div>
         </section>
       </section>
 
       <section class="recentTransactions" id="transactions">
         <h2>Recent Transactions</h2>
-        <button type="button" name="ManageAccounts">NEW TRANSACTIONS</button>
+        <button type="button">NEW TRANSACTIONS</button>
         <table class="recent-transactions">
           <tr>
             <th>Date</th>
