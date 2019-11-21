@@ -1,0 +1,136 @@
+  <head>
+    <html>
+    <meta charset="UTF-8">
+    <title>Balancing Act</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Biryani&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <img src="assets/elephant.svg" alt="Elephant" class="home-icon">
+      <ul>
+        <li><a href="#assets"><img src="assets/dashboard.svg" alt="Elephant" class="nav-icon"></a></li>
+        <li><a href="#transactions"><img src="assets/transactions.svg" alt="Elephant" class="nav-icon"></a></li>
+        <li><a href="#profile"><img src="assets/profile.svg" alt="Elephant" class="nav-icon"></a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="hero">
+        <h1>Balancing Act</h1>
+      </div>
+      <section class="section-left">
+        <div id="welcomeBanner">
+          <h3>Welcome, Oscar!</h3>
+        </div>
+        <section class="accountOverview" id="assets">
+          <div class="card col-33 left">
+            <p>INCOME</p>
+            <h3>$2,119.12</h3>
+          </div>
+          <div class="card col-33">
+            <p>EXPENSES</p>
+            <h3>$420.54</h3>
+          </div>
+          <div class="card col-33 right">
+            <p>CREDIT SCORE</p>
+            <h3>673</h3>
+          </div>
+        </section>
+        <section class="accounts" id="profile">
+          <h2>Accounts</h2>
+          <button type="button" name="ManageAccounts">Manage Accounts</button>
+          <div class="card col-100">
+            <img src="assets/checking.svg" alt="checking">
+            <h4>Wells Fargo</h4>
+            <h5>Checking</h5>
+          </div>
+          <div class="card col-100">
+            <img src="assets/savings.svg" alt="savings">
+            <h4>Wells Fargo</h4>
+            <h4>Savings</h4>
+          </div>
+          <div class="card col-100">
+            <img src="assets/credit-card.svg" alt="credit card">
+            <h4>Amazon Credit</h4>
+            <h4>Credit Card</h4>
+          </div>
+          <div class="card col-100">
+            <img src="assets/credit-card.svg" alt="credit card">
+            <h4>Southwest Credit</h4>
+            <h4>Credit Card</h4>
+          </div>
+        </section>
+      </section>
+
+      <section class="recentTransactions" id="transactions">
+        <h2>Recent Transactions</h2>
+        <button type="button" name="ManageAccounts">NEW TRANSACTIONS</button>
+        <table class="recent-transactions">
+          <tr>
+            <th>Date</th>
+            <th>Payee</th>
+            <th>Inflow</th>
+            <th>Outflow</th>
+          </tr>
+          <tr>
+            <td>Oct 25,2019</td>
+            <td>Target</td>
+            <td>-</td>
+            <td>$82.35</td>
+          </tr>
+          <tr>
+            <td>Oct 24,2019</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>Oct 22,2019</td>
+            <td>Paycheck</td>
+            <td>$1,319.12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oct 21,2019</td>
+            <td>Trader Joe's</td>
+            <td>-</td>
+            <td>$54.92</td>
+          </tr>
+          <tr>
+            <td>Oct 20,2019</td>
+            <td>Shell</td>
+            <td>-</td>
+            <td>$46.23</td>
+          </tr>
+          <tr>
+            <td>Oct 19,2019</td>
+            <td>Rent</td>
+            <td>$800</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oct 19,2019</td>
+            <td>Hapa Sushi</td>
+            <td>-</td>
+            <td>$13.97</td>
+          </tr>
+          <tr>
+            <td>Oct 18,2019</td>
+            <td>Pig Train</td>
+            <td>-</td>
+            <td>$4.83</td>
+          </tr>
+          <tr>
+            <td>Oct 18,2019</td>
+            <td>RTD</td>
+            <td>-</td>
+            <td>$6.00</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+
+  </html>
