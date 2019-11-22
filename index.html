@@ -11,22 +11,22 @@
     <nav>
       <img src="assets/elephant.svg" alt="Elephant" class="home-icon">
       <ul>
-        <li><a href="#assets" id='assets'><img src="assets/dashboard.svg" alt="Elephant" class="nav-icon"></a></li>
-        <li><a href="#transactions" id='transactions'><img src="assets/transactions.svg" alt="Elephant" class="nav-icon"></a></li>
-        <li><a href="#profile" id='profile'><img src="assets/profile.svg" alt="Elephant" class="nav-icon"></a></li>
+        <li><a href="#top" id='assets'><img src="assets/dashboard.svg" class="nav-icon"></a></li>
+        <li><a href="#recentTransactions" id='transactions'><img src="assets/transactions.svg"  class="nav-icon"></a></li>
+        <li><a href="#accounts" id='profile'><img src="assets/profile.svg"  class="nav-icon"></a></li>
       </ul>
     </nav>
-    <main>
+    <main id="top">
       <div class="hero">
         <h1>Balancing Act</h1>
       </div>
       <section class="section-left">
         <div id="welcomeBanner">
-          <button onclick='myFunction()' class='welcome-banner-button'>x</button>
+          <button onclick='myFunction()' class='welcome-banner-button'><img src="assets/close.svg" class='welcome-img'></button>
           <h3>Welcome, Oscar!</h3>
 
         </div>
-        <section class="accountOverview" id="assets">
+        <section class="accountOverview">
           <div class="card col-33 left">
             <p>INCOME</p>
             <h3>$2,119.12</h3>
@@ -40,95 +40,95 @@
             <h3>673</h3>
           </div>
         </section>
-        <section class="accounts" id="profile">
+        <section class="accounts" id="accounts">
           <h2>Accounts</h2>
-          <button type="button" name="ManageAccounts">Manage Accounts</button>
+          <button type="button" name="ManageAccounts">MANAGE ACCOUNTS</button>
           <div class="card col-100">
-            <img src="assets/checking.svg" alt="checking">
+            <img src="assets/checking.svg" alt="checking" class='card-img'>
             <h4>Wells Fargo</h4>
             <h5>Checking</h5>
           </div>
           <div class="card col-100">
-            <img src="assets/savings.svg" alt="savings">
+            <img src="assets/savings.svg" alt="savings" class='card-img'>
             <h4>Wells Fargo</h4>
             <h5>Savings</h5>
           </div>
           <div class="card col-100">
-            <img src="assets/credit-card.svg" alt="credit card">
+            <img src="assets/credit-card.svg" alt="credit card" class='card-img'>
             <h4>Amazon Credit</h4>
             <h5>Credit Card</h5>
           </div>
           <div class="card col-100">
-            <img src="assets/credit-card.svg" alt="credit card">
+            <img src="assets/credit-card.svg" alt="credit card" class='card-img'>
             <h4>Southwest Credit</h4>
             <h5>Credit Card</h5>
           </div>
         </section>
       </section>
 
-      <section class="recentTransactions" id="transactions">
+      <section class="recentTransactions" id="recentTransactions">
         <h2>Recent Transactions</h2>
         <button type="button">NEW TRANSACTIONS</button>
         <table class="recent-transactions">
           <tr>
-            <th>Date</th>
-            <th>Payee</th>
-            <th>Inflow</th>
-            <th>Outflow</th>
+            <th class='date'>Date</th>
+            <th class='payee'>Payee</th>
+            <th class='inflow'>Inflow</th>
+            <th class='outflow'>Outflow</th>
           </tr>
           <tr>
-            <td>Oct 25,2019</td>
-            <td>Target</td>
-            <td>-</td>
-            <td>$82.35</td>
+            <td class='date'>Oct 25,2019</td>
+            <td class='payee'>Target</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$82.35</td>
           </tr>
           <tr>
-            <td>Oct 24,2019</td>
-            <td>Express</td>
-            <td>-</td>
-            <td>$212.24</td>
+            <td class='date'>Oct 24,2019</td>
+            <td class='payee'>Express</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$212.24</td>
           </tr>
           <tr>
-            <td>Oct 22,2019</td>
-            <td>Paycheck</td>
-            <td>$1,319.12</td>
-            <td>-</td>
+            <td class='date'>Oct 22,2019</td>
+            <td class='payee'>Paycheck</td>
+            <td class='inflow'>$1,319.12</td>
+            <td class='outflow'>-</td>
           </tr>
           <tr>
-            <td>Oct 21,2019</td>
-            <td>Trader Joe's</td>
-            <td>-</td>
-            <td>$54.92</td>
+            <td class='date'>Oct 21,2019</td>
+            <td class='payee'>Trader Joe's</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$54.92</td>
           </tr>
           <tr>
-            <td>Oct 20,2019</td>
-            <td>Shell</td>
-            <td>-</td>
-            <td>$46.23</td>
+            <td class='date'>Oct 20,2019</td>
+            <td class='payee'>Shell</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$46.23</td>
           </tr>
           <tr>
-            <td>Oct 19,2019</td>
-            <td>Rent</td>
-            <td>$800</td>
-            <td>-</td>
+            <td class='date'>Oct 19,2019</td>
+            <td class='payee'>Rent</td>
+            <td class='inflow'>$800</td>
+            <td class='outflow'>-</td>
           </tr>
           <tr>
-            <td>Oct 19,2019</td>
-            <td>Hapa Sushi</td>
-            <td>-</td>
-            <td>$13.97</td>
+            <td class='date'>Oct 19,2019</td>
+            <td class='payee'>Hapa Sushi</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$13.97</td>
           </tr>
           <tr>
-            <td>Oct 18,2019</td>
-            <td>Pig Train</td>
-            <td>-</td>
-            <td>$4.83</td>
+            <td class='date'>Oct 18,2019</td>
+            <td class='payee'>Pig Train</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$4.83</td>
           </tr>
           <tr>
-            <td>Oct 18,2019</td>
-            <td>RTD</td>
-            <td>-</td>
-            <td>$6.00</td>
+            <td class='date'>Oct 18,2019</td>
+            <td class='payee'>RTD</td>
+            <td class='inflow'>-</td>
+            <td class='outflow'>$6.00</td>
           </tr>
         </table>
       </section>

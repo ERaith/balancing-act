@@ -3,57 +3,52 @@
 * after{
   box-sizing:border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 nav {
   width: 4%;
   float: left;
   height: 600px;
 }
-.hero{
- width: 100%;
- padding-left: 2%;
 
-}
-
-.home-icon {
-  width: 80px;
-  padding-left: 4%;
-}
-
-.nav-icon {
-  width: 40px;
-  position: relative;
-}
 
 h1 {
-  font-size: 30px;
+  font-size: 42px;
 }
 
 h2 {
   display: inline-block;
+  font-size:32px;
   padding-left: 20px;
   margin-bottom: 0px;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 24px;
+  margin: 0px 100px 0px 60px;
+  padding: 0;
+  display: inline-block;
+  position:absolute;
+  top:34px;
+  left:120px;
+}
+h5{
+  font-size: 24px;
   margin: 0px 30px 0px 60px;
   padding: 0;
   display: inline-block;
-}
-h5{
-  font-size: 22px;
-  margin: 0px 10px 0px 20px;
-  padding: 0;
-  display: inline-block;
-  float:right;
-  width:160px;
+  position:absolute;
+  right:0;
+  top:34px;
+  width:190px;
 }
 
 ul {
@@ -66,11 +61,10 @@ ul {
 
 li a {
   display: block;
-  position: relative;
+  position:relative;
   left: 50%;
-  margin-left: -20px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  margin-left: -15px;
+  margin-bottom: 30px;
   transition: all .7s ease;
 }
 
@@ -81,7 +75,7 @@ li a:hover, li a.activeLink {
   left: 50%;
   margin-left: -30px;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 5px;
   border-left: 4px solid;
   border-color: #8ED1DC;
@@ -97,32 +91,53 @@ main {
   font-family: 'Biryani', sans-serif;
 }
 
-table, th, td {
+th{
   border-bottom: solid 1px #CCCCCC;
   border-collapse: collapse;
   text-align: left;
-  padding: 8px 15px 5px;
+  font-size: 22px;
 }
+td {
+  border-bottom: solid 1px #CCCCCC;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 22px;
+  padding: 10px 0 10px;
+}
+.payee{
+ width:250px;
+}
+.date{
+ width:190px;
+}
+.inflow{
+width:170px;
+}
+.outflow{
+ width:100px;
+}
+
 table{
-width: 96%;
+border-collapse: collapse;
+width: 94%;
 margin-top: 20px;
 margin-left: 2%;
-margin-right: 2%;
 
 }
 button {
   padding: 7px 24px;
-  border-radius: 16px;
+  border-radius: 23px;
   background-color: #1CA3BA;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   position:absolute;
   right:40px;
   top:20px;
-  width:220px;
+  width:260px;
+  height:46px;
   cursor: pointer;
 }
-button.welcome-banner-button{
+.welcome-banner-button{
   background: none;
   width:10px;
 	color: grey;
@@ -133,10 +148,44 @@ button.welcome-banner-button{
   position:absolute;
   top:10px;
   right:20px;
+}
 
+p{
+  padding: 0px;
+  margin: 2px;
+  font-size: 12px;
+}
 
+.hero{
+ width: 100%;
+ padding-left: 2%;
 
 }
+.card-img{
+  width: 42px;
+  position: absolute;
+  left:24px;
+  top:24px;
+}
+.welcome-img{
+  width: 16px;
+  position: absolute;
+  right:10px;
+  top:12px;
+}
+.home-icon {
+  width: 110px;
+left:50%;
+top:20px;
+position: relative;
+margin-left: -40px;
+}
+.nav-icon {
+  width: 54px;
+  position:relative;
+}
+
+
 .recentTransactions button{
  top:30px;
 }
@@ -161,25 +210,28 @@ button.welcome-banner-button{
   background-color: white;
   border-radius: 10px;
   padding: 5px 16px 15px;
-  width: 40%;
+  width: 44%;
   position: relative;
-  margin:0 4% 0;
+  margin:0 3% 0 3%;
   float: left;
 }
 
 .col-33 {
   width: 30%;
-  margin: 0px 2.5% 14px 2.5%;
+  height:134px;
+  margin: 0px 2.5% 24px 2.5%;
+  padding:26px;
 }
 .col-100{
   width:100%;
-  margin: 14px 0px 14px 0px;
+  margin: 4px 0px 14px 0px;
+  height:100px;
+  padding:0;
 }
 .card {
   background-color: white;
   display: inline-block;
   position: relative;
-  padding: 20px;
   border-radius: 5px;
 }
 .left{
@@ -191,20 +243,14 @@ margin: 0px 0px 14px 2.5%;
 position: relative;
 float:right;
 }
-img{
-  width: 30px;
-}
-p{
-  padding: 0px;
-  margin: 0px;
-  font-size: 12px;
-}
+
 
 #welcomeBanner {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   border-radius: 5px;
-  margin: 0 0 14px;
-  padding: 34px;
+  margin: 0 0 35px;
+  padding: 46px;
   width:100%;
+  height:134px;
   position: relative;
 }

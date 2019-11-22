@@ -20,16 +20,11 @@ window.onload = function() {
     //transActive.addEventListener('click', setActive(2));
     // proActive.addEventListener('click', setActive(3));
 
-    function setActive(i) {
-
-
-
+    function setActive(activeLink) {
           proActive.classList.remove('activeLink');
-
           assetActive.classList.remove('activeLink');
-
           transActive.classList.remove('activeLink');
-          i.classList.add('activeLink');
+          activeLink.classList.add('activeLink');
         }
       }
 
