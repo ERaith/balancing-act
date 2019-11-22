@@ -1,9 +1,10 @@
 *,
 * before,
-* after{
-  box-sizing:border-box;
+* after {
+  box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,14 +14,13 @@ nav {
   height: 600px;
 }
 
-
 h1 {
   font-size: 42px;
 }
 
 h2 {
   display: inline-block;
-  font-size:32px;
+  font-size: 32px;
   padding-left: 20px;
   margin-bottom: 0px;
 }
@@ -36,19 +36,20 @@ h4 {
   margin: 0px 100px 0px 60px;
   padding: 0;
   display: inline-block;
-  position:absolute;
-  top:34px;
-  left:120px;
+  position: absolute;
+  top: 34px;
+  left: 120px;
 }
-h5{
+
+h5 {
   font-size: 24px;
   margin: 0px 30px 0px 60px;
   padding: 0;
   display: inline-block;
-  position:absolute;
-  right:0;
-  top:34px;
-  width:190px;
+  position: absolute;
+  right: 0;
+  top: 34px;
+  width: 190px;
 }
 
 ul {
@@ -61,27 +62,29 @@ ul {
 
 li a {
   display: block;
-  position:relative;
+  position: relative;
   left: 50%;
-  margin-left: -15px;
-  margin-bottom: 30px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  padding-top:15px;
+  margin-bottom: 5px;
+  margin-left: -35px;
   transition: all .7s ease;
 }
 
 li a:hover, li a.activeLink {
-  transition: all .7s ease;
   display: block;
   position: relative;
   left: 50%;
-  margin-left: -30px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  padding-top:15px;
+  margin-bottom: 5px;
+  margin-left: -35px;
+  transition: all .7s ease;
   border-left: 4px solid;
   border-color: #8ED1DC;
 }
-
-
 
 main {
   width: 94%;
@@ -91,12 +94,13 @@ main {
   font-family: 'Biryani', sans-serif;
 }
 
-th{
+th {
   border-bottom: solid 1px #CCCCCC;
   border-collapse: collapse;
   text-align: left;
   font-size: 22px;
 }
+
 td {
   border-bottom: solid 1px #CCCCCC;
   border-collapse: collapse;
@@ -104,90 +108,97 @@ td {
   font-size: 22px;
   padding: 10px 0 10px;
 }
-.payee{
- width:250px;
-}
-.date{
- width:190px;
-}
-.inflow{
-width:170px;
-}
-.outflow{
- width:100px;
+
+.payee {
+  width: 250px;
 }
 
-table{
-border-collapse: collapse;
-width: 94%;
-margin-top: 20px;
-margin-left: 2%;
-
+.date {
+  width: 190px;
 }
+
+.inflow {
+  width: 170px;
+}
+
+.outflow {
+  width: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 94%;
+  margin-top: 20px;
+  margin-left: 2%;
+}
+
 button {
   padding: 7px 24px;
   border-radius: 23px;
   background-color: #1CA3BA;
   color: white;
   font-size: 20px;
-  position:absolute;
-  right:40px;
-  top:20px;
-  width:260px;
-  height:46px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 260px;
+  height: 46px;
   cursor: pointer;
 }
-.welcome-banner-button{
+
+.welcome-banner-button {
   background: none;
-  width:10px;
-	color: grey;
-	border: none;
-	padding: 0;
-	font: inherit;
-	outline: inherit;
-  position:absolute;
-  top:10px;
-  right:20px;
+  width: 10px;
+  color: grey;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
-p{
+p {
   padding: 0px;
   margin: 2px;
   font-size: 12px;
 }
 
-.hero{
- width: 100%;
- padding-left: 2%;
-
+.hero {
+  width: 100%;
+  padding-left: 2%;
 }
-.card-img{
+
+.card-img {
   width: 42px;
   position: absolute;
-  left:24px;
-  top:24px;
+  left: 24px;
+  top: 24px;
 }
-.welcome-img{
+
+.welcome-img {
   width: 16px;
   position: absolute;
-  right:10px;
-  top:12px;
+  right: 10px;
+  top: 12px;
 }
+
 .home-icon {
   width: 110px;
-left:50%;
-top:20px;
-position: relative;
-margin-left: -40px;
+  left: 50%;
+  top: 20px;
+  position: relative;
+  margin-left: -40px;
 }
+
 .nav-icon {
   width: 54px;
-  position:relative;
+  position: relative;
 }
 
-
-.recentTransactions button{
- top:30px;
+.recentTransactions button {
+  top: 30px;
 }
 
 .section-left {
@@ -196,12 +207,13 @@ margin-left: -40px;
   position: relative;
   float: left;
 }
+
 .accountOverview {
   width: 100%;
-
 }
+
 .accounts {
-  overflow:auto;
+  overflow: auto;
   width: 100%;
   position: relative;
 }
@@ -212,45 +224,48 @@ margin-left: -40px;
   padding: 5px 16px 15px;
   width: 44%;
   position: relative;
-  margin:0 3% 0 3%;
+  margin: 0 3% 0 3%;
   float: left;
 }
 
 .col-33 {
   width: 30%;
-  height:134px;
+  height: 134px;
   margin: 0px 2.5% 24px 2.5%;
-  padding:26px;
+  padding: 26px;
 }
-.col-100{
-  width:100%;
+
+.col-100 {
+  width: 100%;
   margin: 4px 0px 14px 0px;
-  height:100px;
-  padding:0;
+  height: 100px;
+  padding: 0;
 }
+
 .card {
   background-color: white;
   display: inline-block;
   position: relative;
   border-radius: 5px;
 }
-.left{
-margin: 0px 2.5% 14px 0px;
-float:left;
-}
-.right{
-margin: 0px 0px 14px 2.5%;
-position: relative;
-float:right;
+
+.left {
+  margin: 0px 2.5% 14px 0px;
+  float: left;
 }
 
+.right {
+  margin: 0px 0px 14px 2.5%;
+  position: relative;
+  float: right;
+}
 
 #welcomeBanner {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   border-radius: 5px;
   margin: 0 0 35px;
   padding: 46px;
-  width:100%;
-  height:134px;
+  width: 100%;
+  height: 134px;
   position: relative;
 }
