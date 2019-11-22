@@ -71,19 +71,17 @@ li a {
   margin-left: -35px;
   /* transition: all .7s ease; */
 }
-
-li a:hover, li a.activeLink {
-  display: block;
-  position: relative;
-  left: 50%;
+li a.activeLink {
   padding-left: 14px;
-  padding-bottom: 20px;
-  padding-top:15px;
-  margin-bottom: 5px;
-  margin-left: -35px;
   /* transition: all .7s ease; */
   border-left: 4px solid;
   border-color: #8ED1DC;
+}
+li a:hover{
+  padding-left: 14px;
+  /* transition: all .7s ease; */
+  border-left: 4px solid;
+  border-color: #3C8C9B;
 }
 
 main {
