@@ -1,0 +1,22 @@
+var data = [{
+    Date: '10 - 25 - 19',
+    Account: Credit Card,
+    Payee: Target,
+    Inflow: -,
+    Outflow: $82.95
+  },
+  {
+    Date: '10 - 25 - 19',
+    Account: Credit Card,
+    Payee: Target,
+    Inflow: -,
+    Outflow: $82.95
+  },
+  {
+    Date: '10 - 25 - 19',
+    Account: Credit Card,
+    Payee: Target,
+    Inflow: -,
+    Outflow: $82.95
+  },
+];
