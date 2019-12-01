@@ -1,3 +1,5 @@
+
+/* ||      General Styling for Document */
 *,
 * before,
 * after {
@@ -8,60 +10,14 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+/* ||      Nav & Main */
 nav {
   width: 4%;
   float: left;
   margin-left: -2px;
   height: 600px;
-}
-
-h1 {
-  font-size: 38px;
-  position: absolute;
-
-}
-
-h2 {
-  display: inline-block;
-  font-size: 30px;
-  padding-left: 20px;
-  top:-5px;
-  position:relative;
-  margin-bottom: 0px;
-}
-.accounts h2{
-  color:black;
-}
-.recentTransactions h2 {
-  color:black;
-}
-
-
-h3 {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-h4 {
-  font-size: 24px;
-  margin: 0px 100px 0px 60px;
-  padding: 0;
-  display: inline-block;
-  position: absolute;
-  top: 34px;
-  left: 120px;
-}
-
-h5 {
-  font-size: 24px;
-  margin: 0px 30px 0px 60px;
-  padding: 0;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 34px;
-  width: 190px;
 }
 
 ul {
@@ -94,6 +50,21 @@ li a:hover{
   border-color: #3C8C9B;
 }
 
+.home-icon {
+  width: 86px;
+  left: 50%;
+  top: 20px;
+  position: relative;
+  margin-left: -32px;
+}
+
+.nav-icon {
+  width: 48px;
+  left:50%;
+  margin-left:-18px;
+  position: relative;
+}
+
 main {
   width: 95%;
   float: right;
@@ -101,6 +72,65 @@ main {
   background-color: #f5f5f5;
   font-family: 'Biryani', sans-serif;
 }
+
+/* ||      Typeography */
+
+h1 {
+  font-size: 38px;
+  position: absolute;
+
+}
+
+h2 {
+  display: inline-block;
+  font-size: 30px;
+  padding-left: 20px;
+  top:-5px;
+  position:relative;
+  margin-bottom: 0px;
+}
+.accounts h2{
+  color:black;
+}
+.recentTransactions h2 {
+  color:black;
+}
+
+
+h3 {
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 0px 100px 0px 60px;
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+  left: 120px;
+}
+
+h5 {
+  font-size: 24px;
+  margin: 0px 30px 0px 60px;
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 190px;
+}
+
+p {
+  padding: 0px;
+  margin: 2px;
+  font-size: 12px;
+}
+
+
+/* Table Formatting*/
+
 
 th {
   border-bottom: solid 1px #CCCCCC;
@@ -143,6 +173,8 @@ table {
   margin-left: 2%;
 }
 
+/* || Buttons*/
+
 button {
   padding: 7px 24px;
   border-radius: 23px;
@@ -170,7 +202,6 @@ button {
   cursor: pointer;
 }
 
-
 .welcome-banner-button {
   background: none;
   width: 10px;
@@ -183,6 +214,50 @@ button {
   top: 10px;
   right: 20px;
 }
+
+.button-nav{
+  display:inline-block;
+  width:400px;
+  height:38px;
+  float:right;
+  position:relative;
+  top:80px;
+
+}
+.transaction-hero button{
+  background-color: white;
+  right:0px;
+  position: relative;
+  padding: 7px 24px;
+  margin-left: 5px;
+  border-radius: 23px;
+  border:1.5px solid #1CA3BA;
+  color: #1CA3BA;
+  font-size: 16px;
+  width: 125px;
+  height: 38px;
+  cursor: pointer;
+  top:0;
+  float:right;
+
+}
+.transaction-hero button.active{
+  background-color: #1CA3BA;
+  color: white;
+}
+
+.new-transactions button{
+  display:block;
+  position: relative;
+  width:160px;
+  margin-left: 38px;
+}
+
+.recentTransactions button {
+  top: 30px;
+}
+/* || Forms*/
+
 form{
   text-align: left;
   width:450px;
@@ -217,62 +292,55 @@ border:none;
   height:30px;
   box-shadow: 0px 5px 9px 1px rgba(0,0,0,0.5);
 }
-p {
-  padding: 0px;
-  margin: 2px;
-  font-size: 12px;
+
+/* || Cards*/
+.col-33 {
+  width: 30%;
+  height: 120px;
+  margin: 0px 2.5% 24px 2.5%;
+  padding: 26px;
 }
 
-.hero {
+.col-100 {
   width: 100%;
-  height:150px;
-  padding-left: 2%;
+  margin: 4px 0px 14px 0px;
+  height: 90px;
+  padding: 24px;
 }
 
-.transaction-hero{
-  height:150px;
-}
-.transaction-hero h2{
-  padding-left: 0px;
-  position:relative;
-  top:26px;
-}
-.button-nav{
-  display:inline-block;
-  width:400px;
-  height:38px;
-  float:right;
-  position:relative;
-  top:80px;
-
-}
-.transaction-hero button{
+.card {
   background-color: white;
-  right:0px;
+  display: inline-block;
   position: relative;
-  padding: 7px 24px;
-  margin-left: 5px;
-  border-radius: 23px;
-  border:1.5px solid #1CA3BA;
-  color: #1CA3BA;
-  font-size: 16px;
-  width: 125px;
-  height: 38px;
-  cursor: pointer;
-  top:0;
-  float:right;
-
-}
-.transaction-hero button.active{
-  background-color: #1CA3BA;
-  color: white;
+  border-radius: 5px;
 }
 
+.left {
+  margin: 0px 2.5% 14px 0px;
+  float: left;
+}
+
+.right {
+  margin: 0px 0px 14px 2.5%;
+  position: relative;
+  float: right;
+}
 .card-img {
   width: 42px;
   position: absolute;
   left: 24px;
-  top: 24px;
+  top: 20px;
+}
+
+/* ||Welcome Banner*/
+#welcomeBanner {
+  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  border-radius: 5px;
+  margin: 0 0 35px;
+  padding: 46px;
+  width: 100%;
+  height: 120px;
+  position: relative;
 }
 
 .welcome-img {
@@ -282,23 +350,22 @@ p {
   top: 12px;
 }
 
-.home-icon {
-  width: 86px;
-  left: 50%;
-  top: 20px;
-  position: relative;
-  margin-left: -32px;
+/* || Sections*/
+
+.hero {
+  width: 100%;
+  height:125px;
+  padding-left: 2%;
 }
 
-.nav-icon {
-  width: 48px;
-  left:50%;
-  margin-left:-18px;
-  position: relative;
+.transaction-hero{
+  height:125px;
 }
 
-.recentTransactions button {
-  top: 30px;
+.transaction-hero h2{
+  padding-left: 0px;
+  position:relative;
+  top:26px;
 }
 
 .section-left {
@@ -334,13 +401,6 @@ p {
   border-radius:10px;
   background-color: white;
 }
-.new-transactions button{
-  display:block;
-  position: relative;
-  width:160px;
-  margin-left: 38px;
-}
-
 
 .recentTransactions {
   background-color: white;
@@ -358,46 +418,4 @@ p {
   padding: 5px 16px 15px;
   position: relative;
   float: left;
-}
-
-.col-33 {
-  width: 30%;
-  height: 134px;
-  margin: 0px 2.5% 24px 2.5%;
-  padding: 26px;
-}
-
-.col-100 {
-  width: 100%;
-  margin: 4px 0px 14px 0px;
-  height: 100px;
-  padding: 0;
-}
-
-.card {
-  background-color: white;
-  display: inline-block;
-  position: relative;
-  border-radius: 5px;
-}
-
-.left {
-  margin: 0px 2.5% 14px 0px;
-  float: left;
-}
-
-.right {
-  margin: 0px 0px 14px 2.5%;
-  position: relative;
-  float: right;
-}
-
-#welcomeBanner {
-  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
-  border-radius: 5px;
-  margin: 0 0 35px;
-  padding: 46px;
-  width: 100%;
-  height: 134px;
-  position: relative;
 }

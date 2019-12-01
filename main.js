@@ -34,7 +34,7 @@ transActive.addEventListener('click', function() {
 proActive.addEventListener('click', function() {
   setActive(proActive);
 });
-
+//Removes active link and adds it to the selected nav button.
 function setActive(activeLink) {
   proActive.classList.remove('activeLink');
   assetActive.classList.remove('activeLink');
@@ -43,8 +43,7 @@ function setActive(activeLink) {
 }
 
 
-//Hide and Insert page.
-
+//Hides the Main page content and shows Transactions Page
 function showTransactions() {
   console.log('yay')
   const pageContent = document.getElementById('mainHome');
@@ -199,7 +198,7 @@ function showTransactions() {
 
   `;
 }
-
+//Hides the transaction content and shows Main Page.
 function showMain() {
   console.log('yay')
   const pageContent = document.getElementById('mainHome');
@@ -322,6 +321,8 @@ function showMain() {
 
 
   `;
+  //once the new html is inserted into the DOM tree, we need to check again if the welcome banner should be shown.
+  var data= sessionStorage.getItem('hidden');
   if (data === 'true') {
     document.getElementById('welcomeBanner').style.display = "none";
   } else {
@@ -330,7 +331,7 @@ function showMain() {
 }
 
 
-//Table JavaScript to put the table wherever I want.
+//Table JavaScript to put the table wherever I want. WIP
 function json2table(json, classes) {
   var cols = Object.keys(json[0]);
   var headerRow = '';
