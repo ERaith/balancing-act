@@ -43,12 +43,14 @@ function hideBanner() {
 
 
 //Hide and Insert page.
+/*
 function showTransactions(){
   console.log('yay')
   const pageContent = document.getElementById('mainHome');
   pageContent.innerHTML = '';
   pageContent.innerHTML= '<link rel="import" href="transaction.html">';
 }
+*/
 
 //Table JavaScript to put the table wherever I want.
 function json2table(json, classes) {

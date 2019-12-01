@@ -11,24 +11,27 @@ html {
 nav {
   width: 4%;
   float: left;
+  margin-left: -2px;
   height: 600px;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 38px;
 }
 
 h2 {
   display: inline-block;
-  font-size: 32px;
+  font-size: 30px;
   padding-left: 20px;
+  top:-5px;
+  position:relative;
   margin-bottom: 0px;
 }
 .accounts h2{
-  color:red;
+  color:black;
 }
 .recentTransactions h2 {
-  color:blue;
+  color:black;
 }
 
 
@@ -75,6 +78,7 @@ li a {
   padding-bottom: 20px;
   padding-top:15px;
   margin-bottom: 5px;
+  margin-left: -4px;
   border-left: 4px solid;
   border-color: #ffffff00;
   /* transition: all .7s ease; */
@@ -89,7 +93,7 @@ li a:hover{
 }
 
 main {
-  width: 94%;
+  width: 95%;
   float: right;
   color: #363636;
   background-color: #f5f5f5;
@@ -107,20 +111,23 @@ td {
   border-bottom: solid 1px #CCCCCC;
   border-collapse: collapse;
   text-align: left;
-  font-size: 22px;
+  font-size: 18px;
   padding: 10px 0 10px;
 }
 
 .payee {
-  width: 250px;
+  width: 170px;
 }
-
-.date {
+.account {
   width: 190px;
 }
 
+.date {
+  width: 120px;
+}
+
 .inflow {
-  width: 170px;
+  width: 130px;
 }
 
 .outflow {
@@ -139,14 +146,28 @@ button {
   border-radius: 23px;
   background-color: #1CA3BA;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   right: 40px;
   top: 20px;
-  width: 260px;
-  height: 46px;
+  width: 225px;
+  height: 38px;
   cursor: pointer;
 }
+.manageAccount-button {
+  padding: 7px 24px;
+  border-radius: 23px;
+  background-color: #1CA3BA;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  width: 225px;
+  height: 38px;
+  cursor: pointer;
+}
+
 
 .welcome-banner-button {
   background: none;
@@ -160,7 +181,40 @@ button {
   top: 10px;
   right: 20px;
 }
-
+form{
+  text-align: left;
+  width:450px;
+  height: 550px;
+  left:50%;
+  margin-left:-225px;
+  position:relative;
+  font-size: 20px;
+}
+form div{
+  padding-bottom: 14px;
+}
+input{
+  display:block;
+  font-size:18px;
+  padding-left: 8px;
+  color: grey;
+  border-radius: 2px;
+  border:none;
+  width:100%;
+  height:30px;
+  box-shadow: 0px 5px 9px 1px rgba(0,0,0,0.5);
+}
+select{
+  display:block;
+  font-size:16px;
+  padding-left: 8px;
+  color: grey;
+  border-radius: 2px;
+border:none;
+  width:100%;
+  height:30px;
+  box-shadow: 0px 5px 9px 1px rgba(0,0,0,0.5);
+}
 p {
   padding: 0px;
   margin: 2px;
@@ -170,6 +224,45 @@ p {
 .hero {
   width: 100%;
   padding-left: 2%;
+}
+
+.transaction-hero{
+  height:150px;
+}
+.transaction-hero h2{
+  padding-left: 0px;
+  position:relative;
+  top:26px;
+}
+.button-nav{
+  display:inline-block;
+  width:400px;
+  height:38px;
+  float:right;
+  position:relative;
+  top:80px;
+
+}
+.transaction-hero button{
+  background-color: white;
+  right:0px;
+  position: relative;
+  padding: 7px 24px;
+  margin-left: 5px;
+  border-radius: 23px;
+  border:1.5px solid #1CA3BA;
+  color: #1CA3BA;
+  font-size: 16px;
+  width: 125px;
+  height: 38px;
+  cursor: pointer;
+  top:0;
+  float:right;
+
+}
+.transaction-hero button.active{
+  background-color: #1CA3BA;
+  color: white;
 }
 
 .card-img {
@@ -187,17 +280,17 @@ p {
 }
 
 .home-icon {
-  width: 110px;
+  width: 86px;
   left: 50%;
   top: 20px;
   position: relative;
-  margin-left: -40px;
+  margin-left: -32px;
 }
 
 .nav-icon {
-  width: 54px;
+  width: 48px;
   left:50%;
-  margin-left:-20px;
+  margin-left:-18px;
   position: relative;
 }
 
@@ -222,6 +315,30 @@ p {
   position: relative;
 }
 
+.section-right {
+  border-radius: 10px;
+  padding: 0px 16px 15px;
+  width: 40%;
+  position: relative;
+  margin: 0 5% 0 3%;
+  float: right;
+  text-align: center;
+}
+.section-right h2{
+
+}
+.new-transactions{
+  border-radius:10px;
+  background-color: white;
+}
+.new-transactions button{
+  display:block;
+  position: relative;
+  width:160px;
+  margin-left: 38px;
+}
+
+
 .recentTransactions {
   background-color: white;
   border-radius: 10px;
@@ -229,6 +346,14 @@ p {
   width: 44%;
   position: relative;
   margin: 0 3% 0 3%;
+  float: left;
+}
+.transactions{
+  background-color: white;
+  height:625px;
+  border-radius: 10px;
+  padding: 5px 16px 15px;
+  position: relative;
   float: left;
 }
 
