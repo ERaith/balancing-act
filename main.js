@@ -76,56 +76,56 @@ function showTransactions() {
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Credit Card</td>
           <td class='payee'>Express</td>
           <td class='inflow'>-</td>
           <td class='outflow'>$212.24</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Savings</td>
           <td class='payee'>Paycheck</td>
           <td class='inflow'>$1,319.12</td>
           <td class='outflow'>-</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Credit Card</td>
           <td class='payee'>Trader Joe's</td>
           <td class='inflow'>-</td>
           <td class='outflow'>$54.92</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Checking</td>
           <td class='payee'>Shell</td>
           <td class='inflow'>-</td>
           <td class='outflow'>$46.23</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Savings</td>
           <td class='payee'>Rent</td>
           <td class='inflow'>$800</td>
           <td class='outflow'>-</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Credit Card</td>
           <td class='payee'>Hapa Sushi</td>
           <td class='inflow'>-</td>
           <td class='outflow'>$13.97</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Credit Card</td>
           <td class='payee'>Pig Train</td>
           <td class='inflow'>-</td>
           <td class='outflow'>$4.83</td>
         </tr>
         <tr>
           <td class='date'>10-24-19</td>
-          <td class='account'>Account</td>
+          <td class='account'>Checking</td>
           <td class='payee'>RTD</td>
           <td class='inflow'>-</td>
           <td class='outflow'>$6.00</td>
